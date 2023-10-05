@@ -1,0 +1,7 @@
+#LELGO ISAAC KIPNGENO SCT211-0074/2022
+year=int(input("Enter the year to be checked:"))
+x=year%4
+if (x==0):
+    print("Leap year")
+else:
+    print("Not a leap year")
