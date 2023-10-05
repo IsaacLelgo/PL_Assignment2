@@ -1,0 +1,8 @@
+#LELGO ISAAC KIPNGENO SCT211-0074/2022
+bill=float(input("Enter the total bill amount:"))
+percentage=int(input("Enter the tip percentage(10,12 or 15):"))
+people=int(input("Enter the number of people splitting the bill:"))
+tip=bill*(percentage/100) 
+total=bill+tip
+amount=total/people
+print("Each person should pay{:.2f}".format(amount))
