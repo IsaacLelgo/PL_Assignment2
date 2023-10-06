@@ -1,0 +1,11 @@
+#LELGO ISAAC KIPNGENO SCT211-0074/2022
+from datetime import datetime
+x=input("Enter your date of birth(dd-mm-yyyy):")
+dob=datetime.strptime(x,"%d-%m-%Y")
+today_date=datetime.now()
+age=today_date-dob
+years=age.days//365
+remaining_days=age.days%365
+months=remaining_days//30
+days=remaining_days%30
+print(f"You are {years}years, {months}months and {days}days old.")
