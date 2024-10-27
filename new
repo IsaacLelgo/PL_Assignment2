@@ -1,0 +1,41 @@
+#include <stdio.h>
+int main(){
+    FILE *fp;
+    fp = fopen("Kenya.txt","w");
+    int x;
+    printf("enter an integer:");
+    scanf("%d",&x);
+    fputw(x,fp);
+    fclose(fp);
+    return 0;
+}
+
+#include <stdio.h>
+int main(){
+    FILE *fp;
+    fp = fopen("Kenya.txt","r");
+    int y = fgetw(fp);
+    printf("The integer is:%d",y);
+    fclose(fp);
+    return 0;
+}
+
+#include <stdio.h>
+int main(){
+    FILE *fp;
+    fp = fopen("Kenya.txt","w");
+    printf("enter the number:");
+    int x;
+    scanf("%d",&x);
+    fprintf(fp,"%d\n",x);
+    fclose(fp);
+}
+
+#include <stdio.h>
+int main(){
+    FILE *fp;
+    fp = fopen("Kenya.txt","r");
+    int y;
+    fscanf(fp,"%d",&y);
+    printf("the number is:%d",y)
+}
